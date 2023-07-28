@@ -1,0 +1,87 @@
+---
+import LinkButton from "./LinkButton.astro";
+
+---
+
+<div class="infos container-fluid position-relative">
+    <h2 class="position-absolute d-none d-md-inline">INFOS.</h2>
+    <div class="row">
+        <div class="col justify-content-around">
+            <img src="/icons/clo-t-hanger-svgrepo-com.svg" alt="t-shirt" width="66px" height="71px" class="pic">
+            <h3>SCHRITT EINS</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+            <LinkButton>Weitere Infos</LinkButton>
+        </div>
+        <div class="col">
+            <img src="/icons/cel-balloons-svgrepo-com.svg" alt="t-shirt" width="66px" height="71px" class="pic">
+            <h3>SCHRITT EINS</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+            <LinkButton>Weitere Infos</LinkButton>
+        </div>
+        <div class="col">
+            <img src="/icons/gen-flag-6-svgrepo-com.svg" alt="t-shirt" width="66px" height="71px" class="pic position-relative">
+            <h3>SCHRITT EINS</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+            <LinkButton>Weitere Infos</LinkButton>
+        </div>
+    </div>
+</div>
+
+<style>
+    p {
+        margin-bottom: 3.5rem;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: normal;
+    }
+    h2 {
+        color: #335D66;
+        user-select: none;
+        margin: 0;
+        padding: 0;
+        right: 5rem;
+        top: 3rem;
+        font-size: 200px;
+        font-weight: 800;
+        line-height: 273px;
+    }
+    h3 {
+        margin-bottom: 1.25rem;
+        font-size: 29px;
+        line-height: 39px;
+    }
+    .pic {
+        margin-bottom: 2.313rem;
+    }
+    .infos {
+        background-color: #2F5862;
+        color: #F8FBFD;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .row {
+        gap: 6rem;
+        margin-left: 2rem;
+        margin-right: 5rem;
+    }
+    @media only screen and (min-width: 600px) {
+        .infos {
+            padding-top: 12rem;
+            padding-bottom: 12.5rem;
+        }
+        .row {
+            margin-left: 10rem;
+            margin-right: 10rem;
+        }
+    }
+    @media only screen and (min-height: 900px) {
+        h2 {
+            right: 13rem;
+        }
+        .row {
+            margin-left: 23.75rem;
+            margin-right: 23.75rem;
+        }
+    }
+
+</style>
