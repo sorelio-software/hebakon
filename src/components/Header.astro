@@ -1,0 +1,113 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<header class="position-relative">
+    <img src="/images/Background_bad_Vilbel.png" alt="" srcset="/images/Background_bad_Vilbel@2x.png 2x" class="background">
+    <div class="d-flex flex-column align-items-end">
+        <h1>{title}</h1>
+        <h2>PROGRAMM</h2>
+    </div>
+    <img src="/images/Gruppe 57.png" alt="" srcset="/images/Gruppe 57@2x.png 2x" class="cells overflow-hidden">
+    <img src="/images/Gruppe 31.png" alt="" srcset="/images/Gruppe 31@2x.png 2x" class="gruppe overflow-hidden">
+</header>
+
+<style>
+    h1 {
+        font-size: 60px;
+        font-weight: bold;
+        line-height: 82px
+    }
+    h2 {
+        font-size: 30px;
+        font-weight: normal;
+        line-height: 41px;
+    }
+    div {
+        width: fit-content;
+    }
+    header {
+        color: #F8FBFD;
+        display: flex;
+        justify-content: center;
+        padding-top: 27.25rem;
+        padding-bottom: 7.125rem;
+        overflow: hidden;
+    }
+    .cells {
+        position: absolute;
+        top: 3rem;
+        left: 3.563rem;
+        width: auto;
+        height: 47.188rem;
+        z-index: -2;
+    }
+    .gruppe {
+        position: absolute;
+        top: 5.375rem;
+        left: 11.75rem;
+        width: auto;
+        height: 37.875rem;
+        z-index: -1;
+    }
+    .background {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 90vw;
+        object-position: -20rem;
+        object-fit: cover;
+        z-index: -3;
+        filter: blur(11px) brightness(1.15);
+        -webkit-filter: blur(11px) brightness(1.15);
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+    }
+
+    @media only screen and (min-width: 600px) {
+        .background {
+            width: 100%;
+            height: auto;
+            object-position: center;
+            left: 0;
+            top: -8rem;
+            transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+        }
+        .cells {
+            top: 2.313rem;
+            left: 43.688rem;
+            width: auto;
+            height: 69.5rem;
+        }
+        .gruppe {
+            top: 1.813rem;
+            left: 54.438rem;
+            width: auto;
+            height: 44.625rem;
+            z-index: 10;
+        }
+        header {
+            display: block;
+            padding-top: 29rem;
+            padding-bottom: 6.688rem;
+            padding-left: 16.938rem;
+            overflow: visible;
+        }
+    }
+
+    @media only screen and (min-height: 900px) {
+        .cells {
+            left: 53.688rem;
+            height: 72.5rem;
+        }
+        .gruppe {
+            left: 64.438rem;
+            height: 47.625rem;
+        }
+    }
+</style>
