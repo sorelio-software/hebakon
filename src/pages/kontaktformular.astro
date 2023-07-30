@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Kontaktformular">
-    <main class="container-fluid p-5">
+    <main class="container-fluid">
         <div class="row">
             <div class="col">
                 <FormCard />
@@ -43,5 +43,15 @@ import Layout from "../layouts/Layout.astro";
     }
     main {
         background-color: #F1F1F1;
+        padding-top: 7.8rem;
+        padding-left: 16.6rem !important;
+        padding-right: 16rem !important;
+        padding-bottom: 7.1rem;
+    }
+    .row {
+        gap: 3rem;
+    }
+    .col {
+        padding: 0;
     }
 </style>
