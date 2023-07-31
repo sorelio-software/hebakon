@@ -1,0 +1,33 @@
+---
+interface Props {
+    image: string;
+}
+
+const { image } = Astro.props;
+---
+
+<div class="card text-center shadow">
+    <img src={image} class="card-img-top" alt="">
+    <div class="card-body">
+        <h5 class="card-title">Max Mustermann</h5>
+        <p class="card-text">Director</p>
+    </div>
+</div>
+
+<style>
+    h5 {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    p {
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 30px;
+    }
+    .card {
+        background-color: #FFFFFF;
+        width: 14.2rem;
+        border: none;
+    }
+</style>

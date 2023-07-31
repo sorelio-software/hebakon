@@ -1,0 +1,106 @@
+---
+import PeopleCard from "../components/PeopleCard.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Referent/innen">
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card speaker-card">
+                        <div class="card-body">
+                            <h4 class="card-title">SPEAKER</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="container">
+                        <div class="row card-row">
+                            <div class="col">
+                                <PeopleCard image="/images/NoPath - Kopie (7).png" />
+                            </div>
+                            <div class="col">
+                                <PeopleCard image="/images/NoPath - Kopie (8).png" />
+                            </div>
+                            <div class="col">
+                                <PeopleCard image="/images/NoPath - Kopie (9).png" />
+                            </div>
+                        </div>
+                        <div class="row card-row">
+                            <div class="col">
+                                <PeopleCard image="/images/NoPath - Kopie (7).png" />
+                            </div>
+                            <div class="col">
+                                <PeopleCard image="/images/NoPath - Kopie (8).png" />
+                            </div>
+                            <div class="col">
+                                <PeopleCard image="/images/NoPath - Kopie (9).png" />
+                            </div>
+                        </div>
+                        <div class="row card-row">
+                            <div class="col">
+                                <PeopleCard image="/images/NoPath - Kopie (7).png" />
+                            </div>
+                            <div class="col">
+                                <PeopleCard image="/images/NoPath - Kopie (8).png" />
+                            </div>
+                            <div class="col">
+                                <PeopleCard image="/images/NoPath - Kopie (9).png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+</Layout>
+
+<style>
+    .speaker-card {
+        background-color: #D88788;
+        color: #F8FBFD;
+        border: none;
+        width: 23rem;
+    }
+    .speaker-card .card-body {
+        padding-top: 5.5rem;
+        padding-left: 1.9rem;
+        padding-bottom: 5.8rem;
+        padding-right: 2.2rem;
+    }
+    .speaker-card h4 {
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 55px;
+        margin-bottom: 2.6rem;
+    }
+    .speaker-card p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 30px;
+    }
+    .col {
+        padding: 0;
+    }
+    .card-row {
+        gap: 4.75rem;
+        margin-bottom: 4.6rem;
+        flex-wrap: nowrap;
+    }
+    .card-row:last-of-type {
+        margin-bottom: 0;
+    }
+    main {
+        background-color: #F1F1F1;
+        padding-left: 15.6rem;
+        padding-right: 16.7rem;
+        padding-top: 8rem;
+        padding-bottom: 14.2rem;
+    }
+</style>
