@@ -7,7 +7,7 @@ import Layout from "../layouts/Layout.astro";
     <main>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 d-flex flex-column info-col">
                     <div class="card speaker-card">
                         <div class="card-body">
                             <h4 class="card-title">SPEAKER</h4>
@@ -16,6 +16,16 @@ import Layout from "../layouts/Layout.astro";
                             </p>
                         </div>
                     </div>
+                    <form class="search rounded shadow container-fluid align-items-center">
+                        <input type="text" placeholder="Suche Namen" class="rounded col-10">
+                        <button>
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Interface / Search_Magnifying_Glass">
+                                <path id="Vector" d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
                 <div class="col-7">
                     <div class="container">
@@ -62,6 +72,40 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
+    .info-col {
+        gap: 1.6rem
+    }
+    .search {
+        width: 23rem;
+        height: 3.4rem;
+        background-color: #FFFFFF;
+        margin: 0;
+        padding: 0;
+        padding-left: 1.9rem;
+    }
+
+    .search button {
+        border: none;
+        width: 1.5rem;
+        height: 100%;
+        background-color: transparent;
+    }
+
+    .search input {
+        border: none;
+        height: 100%;
+    }
+
+    .search input:focus {
+        outline: none;
+    }
+
+    .search input::placeholder {
+        color: #1E1E1E;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
     .speaker-card {
         background-color: #D88788;
         color: #F8FBFD;
