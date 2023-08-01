@@ -6,21 +6,26 @@ interface Props {
 const { image } = Astro.props;
 ---
 
-<div class="card text-center shadow">
+<div class="card text-center shadow position-relative">
     <img src={image} class="card-img-top" alt="">
     <div class="card-body">
         <h5 class="card-title">Max Mustermann</h5>
-        <p class="card-text">Director</p>
+        <h6 class="card-text">Director</h6>
+    </div>
+    <div class="position-absolute hover-info">
+        <h5>Max Mustermann</h5>
+        <h6>Director</h6>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
     </div>
 </div>
 
 <style>
-    h5 {
+    .card-body h5 {
         font-size: 22px;
         font-weight: 600;
         line-height: 30px;
     }
-    p {
+    .card-body h6 {
         font-size: 18px;
         font-weight: normal;
         line-height: 30px;
@@ -28,6 +33,56 @@ const { image } = Astro.props;
     .card {
         background-color: #FFFFFF;
         width: 14.2rem;
+        height: 28.4rem;
         border: none;
+    }
+
+    .hover-info {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(133, 69, 70, 0.73);
+        border-radius: var(--bs-card-border-radius);
+        display: none;
+    }
+
+    .hover-info h5 {
+        font-size: 20px;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    .hover-info h6 {
+        font-size: 16px;
+        font-weight: normal;
+        white-space: nowrap;
+    }
+
+    .hover-info p {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 30px;
+        margin: 0;
+        margin-top: 1.75rem;
+    }
+
+    .card:hover .card-body {
+        display: none;
+    }
+
+    .card:hover .card-img-top {
+        height: 100%;
+        object-fit: cover;
+        border-radius: var(--bs-card-border-radius);
+    }
+
+    .card:hover .hover-info {
+        display: flex;
+        flex-direction: column;
+        color: #F8FBFD;
+        text-align: left;
+        padding-left: 2.4rem;
+        padding-right: 2rem;
+        padding-top: 4.4rem;
+        padding-bottom: 4rem;
     }
 </style>
