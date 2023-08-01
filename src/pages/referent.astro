@@ -26,6 +26,9 @@ import Layout from "../layouts/Layout.astro";
                             </svg>
                         </button>
                     </form>
+                    <div class="categories rounded shadow d-flex align-items-center">
+                        <p>Kategorien</p>
+                    </div>
                 </div>
                 <div class="col-7">
                     <div class="container">
@@ -72,6 +75,18 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
+    .categories {
+        width: 23rem;
+        height: 3.4rem;
+        background-color: #FFFFFF;
+    }
+    .categories p {
+        margin: 0;
+        font-size: 18px;
+        font-weight: bold;
+        color: #1E1E1E;
+        padding-left: 1.9rem;
+    }
     .info-col {
         gap: 1.6rem
     }
