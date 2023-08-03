@@ -11,7 +11,7 @@ import Layout from "../layouts/Layout.astro";
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
                 </div>
                 <div class="col px-0 z-1">
-                    <img src="/images/NoPath - Kopie (64).png" alt="" width="837px">
+                    <img src="/images/NoPath - Kopie (64).png" alt="">
                 </div>
             </div>
         </div>
@@ -43,8 +43,8 @@ import Layout from "../layouts/Layout.astro";
         font-size: 20px;
         line-height: 30px;
         font-weight: normal;
-        padding-left: 25rem;
-        margin-right: -4rem;
+        padding-left: 16rem;
+        margin-right: -2rem;
     }
     h2 {
         color: #D88788;
@@ -59,10 +59,11 @@ import Layout from "../layouts/Layout.astro";
         object-fit: contain;
         position: relative;
         z-index: 1;
+        width: 637px;
     }
     .down-part {
-        padding-left: 14.9rem;
-        padding-right: 14.9rem;
+        padding-left: 10.9rem;
+        padding-right: 10.9rem;
     }
     .upper-part {
         margin-bottom: 9.2rem;
@@ -72,12 +73,25 @@ import Layout from "../layouts/Layout.astro";
         margin-right: auto;
         padding: 2.9rem;
     }
-
     main {
         background-color: #F1F1F1;
         padding: 0;
         margin: 0;
         padding-top: 8rem;
         padding-bottom: 8rem;
+    }
+    @media screen
+    and (-webkit-max-device-pixel-ratio: 1) {
+        img {
+            width: 837px;
+        }
+        p {
+            padding-left: 25rem;
+            margin-right: -4rem;
+        }
+        .down-part {
+            padding-left: 14.9rem;
+            padding-right: 14.9rem;
+        }
     }
 </style>
