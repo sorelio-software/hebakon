@@ -176,7 +176,8 @@ import Layout from "../layouts/Layout.astro";
         }
     }
 
-    @media only screen and (min-height: 900px) {
+    @media screen
+    and (-webkit-max-device-pixel-ratio: 1) {
         main {
             padding-top: 8rem;
             padding-left: 15.6rem;
