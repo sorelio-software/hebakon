@@ -81,7 +81,7 @@ import LinkButton from "../components/LinkButton.astro";
 
 <style>
     .directors {
-        padding-left: 15.4rem;
+        padding-left: 20.4rem;
         padding-right: 21rem;
         margin-bottom: 9.2rem;
     }
@@ -128,8 +128,8 @@ import LinkButton from "../components/LinkButton.astro";
     }
     .team {
         padding: 0;
-        padding-left: 15.6rem;
-        padding-right: 15.6rem;
+        padding-left: 5.6rem;
+        padding-right: 5.6rem;
     }
     .card-row {
         gap: 4.75rem;
@@ -140,5 +140,19 @@ import LinkButton from "../components/LinkButton.astro";
         height: 100%;
         width: 100%;
         object-fit: contain;
+    }
+
+    @media screen
+    and (-webkit-max-device-pixel-ratio: 1) {
+        .team {
+            padding: 0;
+            padding-left: 15.6rem;
+            padding-right: 15.6rem;
+        }
+        .directors {
+            padding-left: 15.4rem;
+            padding-right: 21rem;
+            margin-bottom: 9.2rem;
+        }
     }
 </style>
