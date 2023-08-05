@@ -6,6 +6,20 @@ import LinkButton from "../components/LinkButton.astro";
 
 <Layout title="Über Uns - Das Team">
     <main>
+        <div class="d-flex directors justify-content-center">
+            <div class="d-flex gap-4">
+                <div class="img-up">
+                    <img src="/public/images/NoPath - Kopie (4) - dir.png" alt="">
+                </div>
+                <div>
+                    <img src="/public/images/NoPath - Kopie (6) - dir.png" alt="">
+                </div>
+            </div>
+            <div>
+                <h2>DIRECTORS</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
         <div class="container-fluid team">
             <div class="row">
                 <div class="col-4">
@@ -66,6 +80,27 @@ import LinkButton from "../components/LinkButton.astro";
 </Layout>
 
 <style>
+    .directors {
+        padding-left: 15.4rem;
+        padding-right: 21rem;
+        margin-bottom: 9.2rem;
+    }
+    .directors h2 {
+        color: #D88788;
+        font-size: 127px;
+        font-weight: 800;
+        line-height: 173px;
+        margin-left: -4.5rem;
+    }
+    .directors p {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: normal;
+        padding-left: 5.25rem;
+    }
+    .img-up {
+        margin-top: -5rem;
+    }
     main {
         background-color: #F1F1F1;
         padding-top: 8.4rem;
