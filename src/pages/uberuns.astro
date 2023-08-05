@@ -6,13 +6,13 @@ import LinkButton from "../components/LinkButton.astro";
 
 <Layout title="Über Uns - Das Team">
     <main>
-        <div class="d-flex directors justify-content-center">
+        <div class="d-flex flex-column flex-md-row directors justify-content-center">
             <div class="d-flex gap-4">
                 <div class="img-up">
-                    <img src="/public/images/NoPath - Kopie (4) - dir.png" alt="">
+                    <img src="/images/NoPath - Kopie (4) - dir.png" alt="">
                 </div>
                 <div>
-                    <img src="/public/images/NoPath - Kopie (6) - dir.png" alt="">
+                    <img src="/images/NoPath - Kopie (6) - dir.png" alt="">
                 </div>
             </div>
             <div>
@@ -33,7 +33,7 @@ import LinkButton from "../components/LinkButton.astro";
                         </div>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-md-8 col-12">
                     <div class="container">
                         <div class="row card-row">
                             <div class="col">
@@ -81,29 +81,32 @@ import LinkButton from "../components/LinkButton.astro";
 
 <style>
     .directors {
-        padding-left: 20.4rem;
-        padding-right: 21rem;
-        margin-bottom: 9.2rem;
+        padding-left: 1.4rem;
+        padding-right: 2rem;
+        margin-bottom: 3.2rem;
+    }
+    .directors img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
     }
     .directors h2 {
         color: #D88788;
-        font-size: 127px;
+        font-size: 60px;
         font-weight: 800;
-        line-height: 173px;
-        margin-left: -4.5rem;
+        line-height: 100px;
     }
     .directors p {
         font-size: 20px;
         line-height: 30px;
         font-weight: normal;
-        padding-left: 5.25rem;
     }
     .img-up {
         margin-top: -5rem;
     }
     main {
         background-color: #F1F1F1;
-        padding-top: 8.4rem;
+        padding-top: 5.4rem;
     }
     .card-text {
         font-size: 18px;
@@ -125,23 +128,61 @@ import LinkButton from "../components/LinkButton.astro";
         padding-right: 2.8rem;
         padding-top: 5.5rem;
         padding-bottom: 5.5rem;
+        margin-bottom: 4.75rem;
     }
     .team {
-        padding: 0;
-        padding-left: 5.6rem;
-        padding-right: 5.6rem;
+        padding: auto;
     }
     .card-row {
         gap: 4.75rem;
         margin-bottom: 4.6rem;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
     .imgs img {
         height: 100%;
         width: 100%;
         object-fit: contain;
     }
-
+    @media only screen and (min-width: 600px) {
+        .directors {
+            padding-left: 20.4rem;
+            padding-right: 21rem;
+            margin-bottom: 9.2rem;
+        }
+        .directors img {
+            height: unset;
+            width: unset;
+            object-fit: none;
+        }
+        .directors h2 {
+            font-size: 127px;
+            font-weight: 800;
+            line-height: 173px;
+            margin-left: -4.5rem;
+        }
+        .directors p {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: normal;
+            padding-left: 5.25rem;
+        }
+        main {
+            padding-top: 8.4rem;
+        }
+        .team {
+            padding: 0;
+            padding-left: 5.6rem;
+            padding-right: 5.6rem;
+        }
+        .card-row {
+            gap: 4.75rem;
+            margin-bottom: 4.6rem;
+            flex-wrap: nowrap;
+        }
+        .team-card {
+            margin-bottom: 0;
+        }
+    }
     @media screen
     and (-webkit-max-device-pixel-ratio: 1) {
         .team {
