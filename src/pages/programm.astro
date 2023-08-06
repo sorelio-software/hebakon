@@ -1,0 +1,56 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Agenda + After Party">
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="month">MAI</div>
+                    <div class="date">03</div>
+                    <div class="day">Freitag</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="month">MAI</div>
+                    <div class="date">04</div>
+                    <div class="day">Samstag</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    .day {
+        font-size: 49px;
+        font-weight: bold;
+        line-height: 90px;
+        letter-spacing: -3.28px;
+        color: #D88788;
+        text-align: center;
+    }
+    .month {
+        font-size: 87px;
+        font-weight: bold;
+        line-height: 118px;
+        letter-spacing: -5.83px;
+        color: #1E1E1E;
+        text-align: center;
+    }
+    .date {
+        text-align: center;
+        font-size: 154px;
+        font-weight: bold;
+        line-height: 80px;
+        letter-spacing: -10.32px;
+        color: #1E1E1E;
+    }
+    main {
+        background-color: #F1F1F1;
+        padding-top: 8rem;
+        padding-bottom: 6.4rem;
+    }
+</style>
