@@ -5,18 +5,94 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Agenda + After Party">
     <main>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col">
                     <div class="month">MAI</div>
                     <div class="date">03</div>
                     <div class="day">Freitag</div>
                 </div>
+                <div class="program program-first rounded shadow container-fluid">
+                    <div class="row align-items-top">
+                        <div class="time col-3">AB 08:30 UHR</div>
+                        <div class="col second-text border-start border-black border-3">Registrierung und Besuch Aussteller-Forum</div>
+                    </div>
+                    <div class="row align-items-top">
+                        <div class="time col-3">09:30 - 09:45</div>
+                        <div class="col main-text border-start border-black border-3">Eröffnung</div>
+                    </div>
+                    <div class="row align-items-top">
+                        <div class="time col-3">09:45 - 10:30</div>
+                        <div class="col main-text border-start border-black border-3">Die neue Work-Life-Screen-Balance: Bewährte Erfolgsrezepte für den gesunden und konzentrierten Umgang mit digitalen Medien</div>
+                    </div>
+                    <div class="row align-items-top">
+                        <div class="time col-3"></div>
+                        <div class="col second-text border-start border-black border-3">Dr. Sabine Schonert-Hirz, Medizinerin, Unternehmerin, TV Moderatorin, Rednerin</div>
+                    </div>
+                    <div class="row align-items-top">
+                        <div class="time col-3">09:45 - 10:30</div>
+                        <div class="col main-text border-start border-black border-3">„Leopold 2.0“ -Ultraschall durch Hebammen</div>
+                    </div>
+                    <div class="row align-items-top">
+                        <div class="time col-3"></div>
+                        <div class="col second-text border-start border-black border-3">Martina Knapp, Hebamme</div>
+                    </div>
+                    <div class="row align-items-top">
+                        <div class="time col-3">11:15 – 12:00</div>
+                        <div class="col main-text border-start border-black border-3">Apoplex ist nur für Alte! Keineswegs! – Schlaganfall bei Neugeborenen</div>
+                    </div>
+                    <div class="row align-items-top">
+                        <div class="time col-3"></div>
+                        <div class="col second-text border-start border-black border-3">PD Dr. Ronald Sträter, Universitäts-Kinderklinik Münster</div>
+                    </div>
+                    <div class="row align-items-top">
+                        <div class="time col-3"></div>
+                        <div class="col filler border-start border-black border-3"></div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col">
                     <div class="month">MAI</div>
                     <div class="date">04</div>
                     <div class="day">Samstag</div>
+                </div>
+                <div class="program program-second rounded shadow container-fluid">
+                    <div class="row align-items-top">
+                        <div class="time col-3">AB 08:30 UHR</div>
+                        <div class="col second-text border-start border-black border-3">Registrierung und Besuch Aussteller-Forum</div>
+                    </div>
+                    <div class="row align-items-top">
+                        <div class="time col-3">09:30 - 09:45</div>
+                        <div class="col main-text border-start border-black border-3">Eröffnung</div>
+                    </div>
+                    <div class="row align-items-top">
+                        <div class="time col-3">09:45 - 10:30</div>
+                        <div class="col main-text border-start border-black border-3">Die neue Work-Life-Screen-Balance: Bewährte Erfolgsrezepte für den gesunden und konzentrierten Umgang mit digitalen Medien</div>
+                    </div>
+                    <div class="row align-items-top">
+                        <div class="time col-3"></div>
+                        <div class="col second-text border-start border-black border-3">Dr. Sabine Schonert-Hirz, Medizinerin, Unternehmerin, TV Moderatorin, Rednerin</div>
+                    </div>
+                    <div class="row align-items-top">
+                        <div class="time col-3">09:45 - 10:30</div>
+                        <div class="col main-text border-start border-black border-3">„Leopold 2.0“ -Ultraschall durch Hebammen</div>
+                    </div>
+                    <div class="row align-items-top">
+                        <div class="time col-3"></div>
+                        <div class="col second-text border-start border-black border-3">Martina Knapp, Hebamme</div>
+                    </div>
+                    <div class="row align-items-top">
+                        <div class="time col-3">11:15 – 12:00</div>
+                        <div class="col main-text border-start border-black border-3">Apoplex ist nur für Alte! Keineswegs! – Schlaganfall bei Neugeborenen</div>
+                    </div>
+                    <div class="row align-items-top">
+                        <div class="time col-3"></div>
+                        <div class="col second-text border-start border-black border-3">PD Dr. Ronald Sträter, Universitäts-Kinderklinik Münster</div>
+                    </div>
+                    <div class="row align-items-top">
+                        <div class="time col-3"></div>
+                        <div class="col filler border-start border-black border-3"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -24,6 +100,63 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
+    .time {
+        font-size: 30px;
+        line-height: 41px;
+        letter-spacing: -1.95px;
+        font-weight: bold;
+        color: #1E1E1E;
+        width: 28%;
+        padding-right: 1.7rem;
+        padding-top: 0.3rem;
+        text-align: end;
+    }
+    .program {
+        width: 65.4rem;
+        height: 75.5rem;
+        padding-top: 3.8rem;
+        padding-bottom: 4.6rem;
+        padding-left: 5.3rem;
+        padding-right: 11rem;
+    }
+    .program-first {
+        background-color: #D88788;
+        margin-bottom: 6.2rem;
+    }
+    .program-second {
+        background-color: #F8FBFD;
+    }
+    .row:has(.filler) {
+        height: 58%;
+    }
+    .filler::before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+    }
+    .second-text {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: normal;
+        padding-bottom: 0.6rem;
+        padding-top: 0.6rem;
+        padding-left: 2.8rem;
+    }
+    .program-first .second-text {
+        color: #F8FBFD;
+    }
+    .program-second .second-text {
+        color: #D96480;
+    }
+    .main-text {
+        color: #1E1E1E;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: bold;
+        padding-bottom: 0.6rem;
+        padding-top: 0.6rem;
+        padding-left: 2.8rem;
+    }
     .day {
         font-size: 49px;
         font-weight: bold;
@@ -52,5 +185,7 @@ import Layout from "../layouts/Layout.astro";
         background-color: #F1F1F1;
         padding-top: 8rem;
         padding-bottom: 6.4rem;
+        padding-left: 16.5rem;
+        padding-right: 16.5rem;
     }
 </style>
