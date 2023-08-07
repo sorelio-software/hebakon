@@ -101,23 +101,23 @@ import Layout from "../layouts/Layout.astro";
 
 <style>
     .time {
-        font-size: 30px;
+        font-size: 18px;
         line-height: 41px;
         letter-spacing: -1.95px;
         font-weight: bold;
         color: #1E1E1E;
-        width: 28%;
+        width: 40%;
         padding-right: 1.7rem;
         padding-top: 0.3rem;
         text-align: end;
     }
     .program {
         width: 65.4rem;
-        height: 75.5rem;
+        height: fit-content;
         padding-top: 3.8rem;
         padding-bottom: 4.6rem;
-        padding-left: 5.3rem;
-        padding-right: 11rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
     .program-first {
         background-color: #D88788;
@@ -140,7 +140,7 @@ import Layout from "../layouts/Layout.astro";
         font-weight: normal;
         padding-bottom: 0.6rem;
         padding-top: 0.6rem;
-        padding-left: 2.8rem;
+        padding-left: 1.5rem;
     }
     .program-first .second-text {
         color: #F8FBFD;
@@ -155,7 +155,7 @@ import Layout from "../layouts/Layout.astro";
         font-weight: bold;
         padding-bottom: 0.6rem;
         padding-top: 0.6rem;
-        padding-left: 2.8rem;
+        padding-left: 1.5rem;
     }
     .day {
         font-size: 49px;
@@ -183,10 +183,56 @@ import Layout from "../layouts/Layout.astro";
     }
     main {
         background-color: #F1F1F1;
-        padding-top: 8rem;
+        padding-top: 6rem;
         padding-bottom: 6.4rem;
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    @media only screen and (min-width: 600px) {
+        main {
+            background-color: #F1F1F1;
+            padding-top: 8rem;
+            padding-bottom: 6.4rem;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+        }
+        .program {
+            width: 65.4rem;
+            height: 75.5rem;
+            padding-top: 3.8rem;
+            padding-bottom: 4.6rem;
+            padding-left: 5.3rem;
+            padding-right: 11rem;
+        }
+        .time {
+            font-size: 30px;
+            line-height: 41px;
+            letter-spacing: -1.95px;
+            font-weight: bold;
+            color: #1E1E1E;
+            width: 28%;
+            padding-right: 1.7rem;
+            padding-top: 0.3rem;
+            text-align: end;
+        }
+        .second-text {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: normal;
+            padding-bottom: 0.6rem;
+            padding-top: 0.6rem;
+            padding-left: 2.8rem;
+        }
+        .main-text {
+            color: #1E1E1E;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: bold;
+            padding-bottom: 0.6rem;
+            padding-top: 0.6rem;
+            padding-left: 2.8rem;
+        }
     }
 
     @media screen
