@@ -5,7 +5,7 @@ import AusstellerCard from "../components/AusstellerCard.astro";
 
 <Layout title="Aussteller Seminare">
     <main>
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center flex-column flex-md-row">
             <div class="d-flex flex-column items-column">
                 <h2>Seminare am Freitag,<br/>03.05.2024</h2>
                 <AusstellerCard place="AS-1" text="Die Hebammenpraxis effizient und digital mit Hebamio" time="09:00 - 10:30 Uhr"/>
@@ -29,8 +29,8 @@ import AusstellerCard from "../components/AusstellerCard.astro";
 <style>
     h2 {
         color: #D88788;
-        font-size: 40px;
-        line-height: 60px;
+        font-size: 30px;
+        line-height: 40px;
         font-weight: bold;
     }
     .items-column {
@@ -43,5 +43,15 @@ import AusstellerCard from "../components/AusstellerCard.astro";
         background-color: #F1F1F1;
         padding-top: 9.6rem;
         padding-bottom: 10.8rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    @media only screen and (min-width: 600px) {
+        h2 {
+            color: #D88788;
+            font-size: 40px;
+            line-height: 60px;
+            font-weight: bold;
+        }
     }
 </style>

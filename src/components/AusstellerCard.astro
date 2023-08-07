@@ -49,11 +49,21 @@ const { place, text, time } = Astro.props;
     }
     .item {
         background-color: #FFFFFF;
-        width: 42.3rem;
         height: 13.4rem;
-        padding-top: 2.5rem;
-        padding-bottom: 2.25rem;
-        padding-left: 3.4rem;
-        padding-right: 2.3rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.25rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    @media only screen and (min-width: 600px) {
+        .item {
+            background-color: #FFFFFF;
+            width: 42.3rem;
+            height: 13.4rem;
+            padding-top: 2.5rem;
+            padding-bottom: 2.25rem;
+            padding-left: 3.4rem;
+            padding-right: 2.3rem;
+        }
     }
 </style>
