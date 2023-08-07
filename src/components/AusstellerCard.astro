@@ -7,10 +7,12 @@ interface Props {
 
 const { place, text, time } = Astro.props;
 ---
-<div class="item rounded shadow">
-    <p class="place">{place}:</p>
-    <p class="text">{text}</p>
-    <div class="d-flex justify-content-between align-items-center mt-3">
+<div class="item rounded shadow d-flex flex-column justify-content-between">
+    <div>
+        <p class="place">{place}:</p>
+        <p class="text">{text}</p>
+    </div>
+    <div class="d-flex justify-content-between align-items-center">
         <span class="time">{time}</span>
         <span class="price">25,00 €</span>
     </div>
@@ -31,7 +33,7 @@ const { place, text, time } = Astro.props;
         font-size: 20px;
         font-weight: bold;
         line-height: 30px;
-        width: 80%;
+        width: 85%;
     }
     .time {
         color: #1E1E1E;
