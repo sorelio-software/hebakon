@@ -185,7 +185,17 @@ import Layout from "../layouts/Layout.astro";
         background-color: #F1F1F1;
         padding-top: 8rem;
         padding-bottom: 6.4rem;
-        padding-left: 16.5rem;
-        padding-right: 16.5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    @media screen
+    and (-webkit-max-device-pixel-ratio: 1) {
+        main {
+            padding-top: 8rem;
+            padding-bottom: 6.4rem;
+            padding-left: 16.5rem;
+            padding-right: 16.5rem;
+        }
     }
 </style>
