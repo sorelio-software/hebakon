@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro";
+import AusstellerCard from "../components/AusstellerCard.astro";
+---
+
+<Layout title="Aussteller Seminare">
+    <main>
+        <div class="d-flex flex-column items-column">
+            <AusstellerCard place="AS-1" text="Die Hebammenpraxis effizient und digital mit Hebamio" time="09:00 - 10:30 Uhr"/>
+            <AusstellerCard place="FS-2" text="Laborwerte in der Hebammenarbei" time="10:45 - 12:15 Uhr"/>
+            <AusstellerCard place="FS-3" text="Schmerzempfinden und -therapie bei Früh und Neugeborenen" time="14:00 - 15:30 Uhr"/>
+            <AusstellerCard place="FS-4" text="Unter Uns - Selbsthilfe für Second Victims mit Renate Egelkrau" time="16:30 - 18:00 Uhr"/>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    .items-column {
+        gap: 2.2rem;
+    }
+    main {
+        background-color: #F1F1F1;
+        padding-top: 9.6rem;
+        padding-bottom: 10.8rem;
+    }
+</style>

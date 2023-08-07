@@ -1,0 +1,57 @@
+---
+interface Props {
+    place: string;
+    text: string;
+    time: string;
+}
+
+const { place, text, time } = Astro.props;
+---
+<div class="item rounded shadow">
+    <p class="place">{place}:</p>
+    <p class="text">{text}</p>
+    <div class="d-flex justify-content-between align-items-center mt-3">
+        <span class="time">{time}</span>
+        <span class="price">25,00 €</span>
+    </div>
+</div>
+
+<style>
+    p {
+        margin: 0;
+    }
+    .place {
+        color: #1E1E1E;
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 30px;
+    }
+    .text {
+        color: #1E1E1E;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 30px;
+        width: 65%;
+    }
+    .time {
+        color: #1E1E1E;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: normal;
+    }
+    .price {
+        color: #D88788;
+        font-size: 32px;
+        line-height: 48px;
+        font-weight: bold;
+    }
+    .item {
+        background-color: #FFFFFF;
+        width: 42.3rem;
+        height: 13.4rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.25rem;
+        padding-left: 3.4rem;
+        padding-right: 2.3rem;
+    }
+</style>
