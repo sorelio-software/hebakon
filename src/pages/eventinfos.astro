@@ -21,7 +21,7 @@ import Layout from "../layouts/Layout.astro";
                         Fernseh-Journalistin und Moderatorin<br/>
                         beim Hessischen Rundfunk („die Ratgeber“)</p>
                 </div>
-                <div class="col">
+                <div class="col order-first order-md-last">
                     <img src="/images/NoPath - Kopie (24).png" alt="">
                 </div>
             </div>
@@ -80,9 +80,9 @@ import Layout from "../layouts/Layout.astro";
 <style>
     h3 {
         color: #D88788;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: bold;
-        line-height: 55px;
+        line-height: 30px;
         margin-bottom: 1.4rem;
     }
     p {
@@ -95,7 +95,7 @@ import Layout from "../layouts/Layout.astro";
         text-decoration: underline;
     }
     .fst-row {
-        padding-left: 3.3rem;
+        padding-left: 0.5rem;
     }
     .snd-row {
         gap: 0;
@@ -151,27 +151,28 @@ import Layout from "../layouts/Layout.astro";
     }
     .fst-part h2 {
         color: #D88788;
-        font-size: 101px;
-        line-height: 138px;
-        letter-spacing: -5.05px;
+        font-size: 42px;
+        line-height: 90px;
+        letter-spacing: -2.05px;
         font-weight: 800;
-        margin-bottom: 4rem;
-        margin-right: -20rem;
+        margin-bottom: 0;
+        margin-right: 0;
         position: relative;
+        text-align: center;
     }
     .fst-row img {
-        width: 59.25rem;
-        height: auto;
-        margin-right: -1rem;
+        width: 100vw;
+        margin-right: 0;
         margin-bottom: -1rem;
+        margin-left: -0.5rem;
     }
     .snd-row img{
-        width: 53.313rem;
+        width: 100vw;
         height: auto;
-        margin-top: 3.438rem;
+        margin-top: 1.438rem;
     }
     .snd-row > .col:last-of-type {
-        padding-left: 7.438rem;
+        padding-left: 0.5rem;
     }
     .col {
         padding: 0;
@@ -180,9 +181,52 @@ import Layout from "../layouts/Layout.astro";
     main {
         padding: 0;
         background-color: #F1F1F1;
-        padding-top: 5.6rem;
+        padding-top: 0;
     }
 
+    @media only screen and (min-width: 600px) {
+        h3 {
+            color: #D88788;
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 55px;
+            margin-bottom: 1.4rem;
+        }
+        .fst-part h2 {
+            color: #D88788;
+            font-size: 101px;
+            line-height: 138px;
+            letter-spacing: -5.05px;
+            font-weight: 800;
+            margin-bottom: 4rem;
+            margin-right: -20rem;
+            position: relative;
+            text-align: left;
+        }
+        .fst-row {
+            padding-left: 3.3rem;
+        }
+        .fst-row img {
+            width: 59.25rem;
+            height: auto;
+            margin-right: -1rem;
+            margin-bottom: -1rem;
+            margin-left: 0;
+        }
+        .snd-row img{
+            width: 53.313rem;
+            height: auto;
+            margin-top: 3.438rem;
+        }
+        .snd-row > .col:last-of-type {
+            padding-left: 7.438rem;
+        }
+        main {
+            padding: 0;
+            background-color: #F1F1F1;
+            padding-top: 5.6rem;
+        }
+    }
     @media screen
     and (-webkit-max-device-pixel-ratio: 1) {
         .fst-row {
