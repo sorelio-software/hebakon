@@ -1,0 +1,220 @@
+---
+import Layout from "../layouts/Layout.astro";
+import InfosTicketsAfterparty from "../components/InfosTicketsAfterparty.astro";
+import InfosTicketsPrices from "../components/InfosTicketsPrices.astro";
+import LinkButton from "../components/LinkButton.astro";
+---
+
+<Layout title="Infos & Tickets">
+    <main>
+        <div class="d-flex fst-part flex-column flex-md-row">
+            <div class="d-flex flex-column order-1 order-md-0">
+                <div class="img-1 order-1 order-md-0">
+                    <img src="/images/NoPath - Kopie (61).png" alt="">
+                </div>
+                <div class="content-1 order-0 order-md-1">
+                    <h3>ÜBERNACHTUNG</h3>
+                    <p>
+                        Es befinden sich 180 Zimmer im neu erbauten und direkt angeschlossenen Dorint-Parkhotel. Alternative Hotelverfügbarkeit im Umkreis vorhanden. Bad Vilbel verfügt auch über zahlreiche Privatunterkünfte: <span class="underline">www.bad-vilbel.de/produkte/unterkunftsverzeichnis</span><br/>
+                        <br/>
+                        In folgenden Hotels haben wir Abrufkontingente für Sie eingerichtet:<br/>
+                        <br/>
+                        Bitte geben Sie bei der Buchung das Stichwort <b>"B.F.G. - HEBAKON"</b> an.<br/>
+                        <br/>
+                        <b>Dorint Hotel:</b> +49 6101 6556 0<br/>
+                        info.bad-vilbel@dorint.com<br/>
+                        <b>City Hotel:</b> +49 6101 5880<br/>
+                        info@cityhotel-badvilbel.de<br/>
+                        <br>
+                        Bad Vilbel verfügt auch über zahlreiche Privatunterkünfte und Wohnmobilstellplätze:<br/>
+                        www.bad-vilbel.de/produkte/unterkunftsverzeichnis
+                    </p>
+                    <h3>ANREISE</h3>
+                    <p>
+                        Für Gäste aus Österreich wird es einen organisierten Bustransfer geben.<br/>
+                        Bitte geben Sie das bei der Buchung mit an, wenn Sie diesen nutzen möchten.<br/>
+                        Folgende Orte werden angefahren: Wien, St. Pölten, Wels, Graz, Klagenfurt, Innsbruck und Salzburg.<br/>
+                        Für Gäste aus D und der CH empfehlen wir die Anreise mit öffentlichen Verkehrsmitteln.<br/>
+                        <br/>
+                        <span class="underline">https://vil-co.de/anreise</span>
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex flex-column order-0 order-md-1">
+                <div class="content-2">
+                    <h2>BAD VILBEL</h2>
+                    <p>
+                        Bad Vilbel – die Stadt der drei Quellen – wird als die Aufsteigerstadt der Rhein-Main-Region bezeichnet. Bad Vilbel verfügt über eine hervorragende Verkehrsanbindung, welche die Nähe zu Frankfurt am Main voll zur Geltung bringt. Von Stadtmitte zu Stadtmitte sind es nur 8 km.
+                    </p>
+                    <h3>ADRESSE</h3>
+                    <p>
+                        <b>
+                        Kongresszentrum VILCO<br/>
+                        Niddastraße 1, 61118 Bad Vilbel
+                        <br/>
+                        </b>
+                    </p>
+                    <LinkButton>Route Planen</LinkButton>
+                    <p>
+                        Im Mai 2023 wird Bad Vilbel um eine Attraktivität reicher. Ein modernes Kongresszentrum vereint mit historischem Kurhaus öffnet die Tore. Die Lage zwischen Kurpark und Dorint-Hotel lädt zum Verweilen ein. Die Ausstellung befindet sich im lichtdurchfluteten Foyer auf zwei Etagen. 350 Parkplätze in der Tiefgarage der VILCO sorgen für eine gute An- und Abreise.
+                    </p>
+                </div>
+                <div class="img-2 mt-auto">
+                    <img src="/images/NoPath - Kopie (54).png" alt="">
+                </div>
+            </div>
+        </div>
+        <InfosTicketsAfterparty />
+        <InfosTicketsPrices />
+        <div class="d-flex imgs">
+            <div>
+                <img src="/images/NoPath - Kopie (62).png" alt="">
+            </div>
+            <div>
+                <img src="/images/NoPath - Kopie (59).png" alt="">
+            </div>
+            <div>
+                <img src="/images/NoPath - Kopie (58).png" alt="">
+            </div>
+            <div>
+                <img src="/images/NoPath - Kopie (60).png" alt="">
+            </div>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    b {
+        font-weight: 600;
+    }
+    .underline {
+        text-decoration: underline;
+    }
+    .fst-part {
+        background-color: #F1F1F1;
+        padding-top: 2.75rem;
+        padding-bottom: 0;
+        width: 100%;
+        gap: 5.4rem;
+        overflow: hidden;
+    }
+    .fst-part h2 {
+        font-size: 65px;
+        font-weight: 800;
+        line-height: 100px;
+        letter-spacing: -2.75px;
+        color: #D88788;
+        margin-left: 0;
+        margin-bottom: 3.25rem;
+    }
+    .fst-part h3 {
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 55px;
+        letter-spacing: -2.68px;
+        color: #D88788;
+        margin-bottom: 2.25rem;
+    }
+    .fst-part p {
+        font-size: 20px;
+        line-height: 30px;
+        color: #1E1E1E;
+    }
+    .fst-part .img-1 img {
+        width: 50.25rem;
+        height: auto;
+        margin-bottom: 5.25rem;
+    }
+    .fst-part .content-1 {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .fst-part .content-2 {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .content-1 p:first-of-type {
+        margin-bottom: 3.8rem;
+    }
+    .content-2 p:first-of-type {
+        margin-bottom: 3.25rem;
+    }
+    .content-2 p:last-of-type {
+        margin-top: 3.25rem;
+        margin-bottom: 3.25rem;
+    }
+    .fst-part .img-2 img {
+        width:  28.313rem;
+        height: auto;
+    }
+    .imgs img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    @media only screen and (min-width: 600px) {
+        .fst-part {
+            background-color: #F1F1F1;
+            padding-top: 9.75rem;
+            padding-bottom: 8.875rem;
+            width: 100%;
+            gap: 5.4rem;
+            overflow: hidden;
+        }
+        .fst-part h2 {
+            font-size: 125px;
+            font-weight: 800;
+            line-height: 211px;
+            letter-spacing: -7.75px;
+            color: #D88788;
+            margin-left: -17rem;
+            margin-bottom: 3.25rem;
+        }
+        .fst-part .content-2 {
+            padding-right: 6.6rem;
+            padding-left: 0;
+        }
+        .fst-part .content-1 {
+            padding-left: 5.6rem;
+            padding-right: 0;
+        }
+        .fst-part .img-2 img {
+            width:  40.313rem;
+            height: auto;
+        }
+    }
+
+    @media screen
+    and (-webkit-max-device-pixel-ratio: 1) {
+        .fst-part {
+            background-color: #F1F1F1;
+            padding-top: 9.75rem;
+            padding-bottom: 8.875rem;
+            width: 100%;
+            gap: 7.4rem;
+            overflow: hidden;
+        }
+        .fst-part h2 {
+            font-size: 155px;
+            font-weight: 800;
+            line-height: 211px;
+            letter-spacing: -7.75px;
+            color: #D88788;
+            margin-left: -22rem;
+            margin-bottom: 3.25rem;
+        }
+        .fst-part .img-1 img {
+            width: 60.25rem;
+            height: 45.125rem;
+            margin-bottom: 5.25rem;
+        }
+        .fst-part .img-2 img {
+            width: 52.313rem;
+            height: 53.875rem;
+        }
+        .fst-part .content-1 {
+            padding-left: 15.6rem;
+        }
+    }
+</style>
+

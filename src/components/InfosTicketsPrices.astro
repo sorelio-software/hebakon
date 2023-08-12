@@ -1,0 +1,122 @@
+---
+import LinkButton from "../components/LinkButton.astro";
+---
+
+<div class="trd-part">
+    <h2>KONGRESSTICKETS - PREISE</h2>
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4">
+            <div class="card shadow align-items-center">
+                <div class="over-info"><span>ABGELAUFEN</span></div>
+                <h3>Frühblüher</h3>
+                <span class="price">229,- €</span>
+                <p class="date">
+                    ab 05.05. – 01.06.2023<br/>(100 Frühblüher verfügbar)
+                </p>
+                <span class="mt-auto"><LinkButton>KAUFEN</LinkButton></span>
+            </div>
+            <div class="card shadow align-items-center">
+                <h3>STANDARD</h3>
+                <span class="price">259,- €</span>
+                <p class="date">02.06. – 03.10.2023</p>
+                <span class="mt-auto"><LinkButton>KAUFEN</LinkButton></span>
+            </div>
+            <div class="card shadow align-items-center">
+                <div class="over-info"><span>KOMMT BALD</span></div>
+                <h3>Spätzünder</h3>
+                <span class="price">289,- €</span>
+                <p class="date">ab 04.10.2023</p>
+                <span class="mt-auto"><LinkButton>KAUFEN</LinkButton></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        padding-top: 6.2rem;
+        padding-bottom: 3.6rem;
+        background-color: #F8FBFD;
+        width: 23.2rem;
+        height: 30rem;
+        position: relative;
+    }
+    .card .over-info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(51, 93, 102, 0.8);
+        border-radius: var(--bs-card-border-radius);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card .over-info span {
+        font-size: 52px;
+        line-height: 30px;
+        font-weight: bold;
+        color: #F8FBFD;
+    }
+    .card h3 {
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 30px;
+        color: #1E1E1E;
+        margin-bottom: 2.25rem;
+        text-transform: uppercase;
+    }
+    .card .price {
+        font-size: 80px;
+        font-weight: bold;
+        line-height: 109px;
+        letter-spacing: -5.36px;
+        color: #D88788;
+        margin-bottom: 2.25rem;
+    }
+    .card .date {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: normal;
+        color: #1E1E1E;
+        text-align: center;
+    }
+    .imgs img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    .trd-part {
+        background-color: #F1F1F1;
+        padding-top: 6.6rem;
+        padding-bottom: 12.4rem;
+    }
+    .trd-part h2 {
+        font-size: 40px;
+        line-height: 68px;
+        letter-spacing: -3.35px;
+        font-weight: bold;
+        text-align: center;
+        color: #D88788;
+        margin-bottom: 5.3rem;
+    }
+    @media only screen and (min-width: 600px) {
+        .card {
+            padding-top: 6.2rem;
+            padding-bottom: 3.6rem;
+            background-color: #F8FBFD;
+            width: 28.2rem;
+            height: 35rem;
+            position: relative;
+        }
+        .trd-part h2 {
+            font-size: 50px;
+            line-height: 68px;
+            letter-spacing: -3.35px;
+            font-weight: bold;
+            text-align: center;
+            color: #D88788;
+            margin-bottom: 5.3rem;
+        }
+    }
+</style>
