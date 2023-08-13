@@ -5,7 +5,7 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Für Aussteller">
     <main>
         <div class="fst-part d-flex">
-            <div>
+            <div class="img1">
                 <img src="/images/NoPath - Kopie (61).png" alt="">
             </div>
             <div>
@@ -66,22 +66,22 @@ import Layout from "../layouts/Layout.astro";
 <style>
     .fst-part {
         background-color: #F1F1F1;
-        padding-top: 6.8rem;
-        padding-right: 16.7rem;
+        padding-top: 3.8rem;
+        padding-right: 5.7rem;
     }
-    .fst-part img:first-of-type {
-        width: 60.25rem;
+    .fst-part .img1 img {
+        width: 50.25rem;
         height: auto;
     }
     .fst-part h2 {
-        font-size: 109px;
+        font-size: 79px;
         font-weight: 800;
         letter-spacing: -5.45px;
-        line-height: 124px;
+        line-height: 104px;
         color: #D88788;
         padding-top: 2.1rem;
-        margin-left: -3rem;
-        margin-bottom: 4.3rem;
+        margin-left: -2rem;
+        margin-bottom: 1.3rem;
     }
     .fst-part .arrow img {
         width: 0.8rem;
@@ -105,5 +105,28 @@ import Layout from "../layouts/Layout.astro";
         height: 100%;
         width: 100%;
         object-fit: contain;
+    }
+
+    @media screen
+    and (-webkit-max-device-pixel-ratio: 1) {
+        .fst-part {
+            background-color: #F1F1F1;
+            padding-top: 6.8rem;
+            padding-right: 16.7rem;
+        }
+        .fst-part .img1 img {
+            width: 60.25rem;
+            height: auto;
+        }
+        .fst-part h2 {
+            font-size: 109px;
+            font-weight: 800;
+            letter-spacing: -5.45px;
+            line-height: 124px;
+            color: #D88788;
+            padding-top: 2.1rem;
+            margin-left: -3rem;
+            margin-bottom: 4.3rem;
+        }
     }
 </style>
