@@ -4,11 +4,11 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Für Aussteller">
     <main>
-        <div class="fst-part d-flex">
+        <div class="fst-part d-flex flex-column flex-md-row">
             <div class="img1">
                 <img src="/images/NoPath - Kopie (61).png" alt="">
             </div>
-            <div>
+            <div class="content">
                 <h2>MODERN UND VIELFÄLTIG</h2>
                 <div class="lst d-flex flex-column">
                     <div class="d-flex align-items-center mb-4">
@@ -66,21 +66,25 @@ import Layout from "../layouts/Layout.astro";
 <style>
     .fst-part {
         background-color: #F1F1F1;
-        padding-top: 3.8rem;
-        padding-right: 5.7rem;
+        padding-top: 0;
+        padding-right: 0;
+    }
+    .fst-part .content {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
     .fst-part .img1 img {
-        width: 50.25rem;
+        width: 100vw;
         height: auto;
     }
     .fst-part h2 {
-        font-size: 79px;
+        font-size: 59px;
         font-weight: 800;
-        letter-spacing: -5.45px;
-        line-height: 104px;
+        letter-spacing: -2.45px;
+        line-height: 64px;
         color: #D88788;
         padding-top: 2.1rem;
-        margin-left: -2rem;
+        margin-left: 0;
         margin-bottom: 1.3rem;
     }
     .fst-part .arrow img {
@@ -92,7 +96,7 @@ import Layout from "../layouts/Layout.astro";
         margin-right: 1.125rem;
     }
     .fst-part .lst {
-        margin-left: 3.9rem;
+        margin-left: 0;
         padding-right: 3rem;
     }
     .fst-part .lst .text {
@@ -106,7 +110,35 @@ import Layout from "../layouts/Layout.astro";
         width: 100%;
         object-fit: contain;
     }
-
+    @media only screen and (min-width: 600px) {
+        .fst-part {
+            background-color: #F1F1F1;
+            padding-top: 3.8rem;
+            padding-right: 5.7rem;
+        }
+        .fst-part .content {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .fst-part .img1 img {
+            width: 50.25rem;
+            height: auto;
+        }
+        .fst-part h2 {
+            font-size: 79px;
+            font-weight: 800;
+            letter-spacing: -5.45px;
+            line-height: 104px;
+            color: #D88788;
+            padding-top: 2.1rem;
+            margin-left: -2rem;
+            margin-bottom: 1.3rem;
+        }
+        .fst-part .lst {
+            margin-left: 3.9rem;
+            padding-right: 3rem;
+        }
+    }
     @media screen
     and (-webkit-max-device-pixel-ratio: 1) {
         .fst-part {
