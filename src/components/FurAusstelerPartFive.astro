@@ -1,0 +1,79 @@
+---
+import FurAusstelerListItem from "../components/FurAusstelerListItem.astro";
+---
+
+<div class="fifth-part position-relative">
+    <img src="/images/Gruppe 56.png" alt="" class="gruppe">
+    <div class="d-flex flex-column align-items-center content">
+        <h2>ÜBERSICHT SPONSORINGMÖGLICHKEITEN UND WERBUNG</h2>
+        <div class="d-flex lst-of-lst">
+            <div class="d-flex flex-column lst">
+                <FurAusstelerListItem>Lanyards</FurAusstelerListItem>
+                <FurAusstelerListItem>Paket Stifte und Schreibblöcke</FurAusstelerListItem>
+                <FurAusstelerListItem>Hebammen Party max. 2 Sponsoren</FurAusstelerListItem>
+                <FurAusstelerListItem>Ausgabe von Getränke Wertgutscheinen</FurAusstelerListItem>
+                <FurAusstelerListItem>Sponsoring Lounge Bereich auf Anfrage</FurAusstelerListItem>
+                <FurAusstelerListItem>Bannerschaltungen auf der Kongresshomepage</FurAusstelerListItem>
+                <div class="question">Oder haben Sie weitere Ideen?</div>
+            </div>
+            <div class="d-flex flex-column lst">
+                <FurAusstelerListItem>Wasserspender Sponsoring auf Anfrage</FurAusstelerListItem>
+                <FurAusstelerListItem>Lunch: 2 x Lunch, 2 Erfrischungspausen pro Ausgabestation nur 1 Sponsor</FurAusstelerListItem>
+                <FurAusstelerListItem>Bannerschaltungen im Kongressgebäude</FurAusstelerListItem>
+                <FurAusstelerListItem>Verlinkung auf die Kongresshomepage</FurAusstelerListItem>
+                <FurAusstelerListItem>Refill‐Trinkbecher auf Anfrage</FurAusstelerListItem>
+                <FurAusstelerListItem>Wir sagen Danke und Tschüs bis zum nächsten Mal „Take home message“</FurAusstelerListItem>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+.fifth-part {
+        background-color: #2F5862;
+        overflow: hidden;
+        padding-top: 8rem;
+        padding-bottom: 8.4rem;
+    }
+    .content {
+        z-index: 2;
+        position: relative;
+    }
+    .content .lst {
+        gap: 2.5rem;
+        width: 28.4rem;
+    }
+    .lst-of-lst {
+        gap: 5rem;
+    }
+    .question {
+        margin-top: 4.125rem;
+        font-size: 18px;
+        line-height: 30px;
+        color: #F8FBFD;
+        font-weight: bold;
+    }
+    .fifth-part h2 {
+        font-size: 40px;
+        line-height: 60px;
+        font-weight: bold;
+        color: #D88788;
+        text-align: center;
+        padding: 0 31.6rem;
+        margin-bottom: 6.6rem;
+    }
+    .gruppe {
+        display: none;
+        position: absolute;
+        bottom: -430px;
+        right: -800px;
+        transform: rotate(109deg) scale(0.6);
+        z-index: 1;
+    }
+    @media only screen and (min-width: 600px) {
+        .gruppe {
+            display: block;
+        }
+    }
+</style>
