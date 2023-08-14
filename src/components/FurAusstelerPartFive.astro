@@ -6,8 +6,8 @@ import FurAusstelerListItem from "../components/FurAusstelerListItem.astro";
     <img src="/images/Gruppe 56.png" alt="" class="gruppe">
     <div class="d-flex flex-column align-items-center content">
         <h2>ÜBERSICHT SPONSORINGMÖGLICHKEITEN UND WERBUNG</h2>
-        <div class="d-flex lst-of-lst">
-            <div class="d-flex flex-column lst">
+        <div class="d-flex flex-column flex-md-row lst-of-lst">
+            <div class="d-flex flex-column lst order-1 order-md-0">
                 <FurAusstelerListItem>Lanyards</FurAusstelerListItem>
                 <FurAusstelerListItem>Paket Stifte und Schreibblöcke</FurAusstelerListItem>
                 <FurAusstelerListItem>Hebammen Party max. 2 Sponsoren</FurAusstelerListItem>
@@ -16,7 +16,7 @@ import FurAusstelerListItem from "../components/FurAusstelerListItem.astro";
                 <FurAusstelerListItem>Bannerschaltungen auf der Kongresshomepage</FurAusstelerListItem>
                 <div class="question">Oder haben Sie weitere Ideen?</div>
             </div>
-            <div class="d-flex flex-column lst">
+            <div class="d-flex flex-column lst order-0 order-md-0">
                 <FurAusstelerListItem>Wasserspender Sponsoring auf Anfrage</FurAusstelerListItem>
                 <FurAusstelerListItem>Lunch: 2 x Lunch, 2 Erfrischungspausen pro Ausgabestation nur 1 Sponsor</FurAusstelerListItem>
                 <FurAusstelerListItem>Bannerschaltungen im Kongressgebäude</FurAusstelerListItem>
@@ -42,10 +42,10 @@ import FurAusstelerListItem from "../components/FurAusstelerListItem.astro";
     }
     .content .lst {
         gap: 2.5rem;
-        width: 28.4rem;
+        width: 90vw;
     }
     .lst-of-lst {
-        gap: 5rem;
+        gap: 2.5rem;
     }
     .question {
         margin-top: 4.125rem;
@@ -55,25 +55,61 @@ import FurAusstelerListItem from "../components/FurAusstelerListItem.astro";
         font-weight: bold;
     }
     .fifth-part h2 {
-        font-size: 40px;
-        line-height: 60px;
+        font-size: 25px;
+        line-height: 40px;
         font-weight: bold;
         color: #D88788;
         text-align: center;
-        padding: 0 31.6rem;
+        padding: 0 0rem;
         margin-bottom: 6.6rem;
     }
     .gruppe {
         display: none;
         position: absolute;
         bottom: -430px;
-        right: -800px;
+        right: -1000px;
         transform: rotate(109deg) scale(0.6);
         z-index: 1;
     }
     @media only screen and (min-width: 600px) {
+        .fifth-part h2 {
+            font-size: 40px;
+            line-height: 60px;
+            font-weight: bold;
+            color: #D88788;
+            text-align: center;
+            padding: 0 20rem;
+            margin-bottom: 6.6rem;
+        }
+        .content .lst {
+            gap: 2.5rem;
+            width: 28.4rem;
+        }
+        .lst-of-lst {
+            gap: 5rem;
+        }
         .gruppe {
             display: block;
+        }
+    }
+    @media screen
+    and (-webkit-max-device-pixel-ratio: 1) {
+        .fifth-part h2 {
+            font-size: 40px;
+            line-height: 60px;
+            font-weight: bold;
+            color: #D88788;
+            text-align: center;
+            padding: 0 31.6rem;
+            margin-bottom: 6.6rem;
+        }
+        .gruppe {
+            display: none;
+            position: absolute;
+            bottom: -430px;
+            right: -800px;
+            transform: rotate(109deg) scale(0.6);
+            z-index: 1;
         }
     }
 </style>
