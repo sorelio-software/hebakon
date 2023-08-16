@@ -2,9 +2,9 @@
 import LinkButton from "../components/LinkButton.astro";
 ---
 
-<div class="forth-part d-flex justify-content-between">
+<div class="forth-part d-flex justify-content-between flex-column flex-md-row">
     <div class="d-flex flex-column">
-        <div class="text1">
+        <div class="text1 order-1 order-md-0">
             <h3>MOBILIAR UND TECHNISCHE AUSSTATTUNG</h3>
             <p>
                 Auf Wunsch können wir Ihnen zusätzliches Mobiliar und einen Elektroanschluss für Ihren Stand zur Verfügung stellen. Die entsprechende Auswahl und Bestellmöglichkeit stellen wir Ihnen schnellstmöglich online als Download zu Verfügung.<br/>
@@ -15,7 +15,7 @@ import LinkButton from "../components/LinkButton.astro";
                 Die Vergabe der Standplätze erfolgt nach dem Prinzip „first come – first served“. Firmen, die einen Sponsorenstatus haben, werden bevorzugt platziert.
             </p>
         </div>
-        <div class="img">
+        <div class="img order-0 order-md-1">
             <img src="/images/84552.png" alt="">
         </div>
     </div>
@@ -38,9 +38,10 @@ import LinkButton from "../components/LinkButton.astro";
 <style>
     .forth-part {
         background-color: #F1F1F1;
-        padding-top: 8.375rem;
+        padding-top: 0;
         padding-bottom: 9.75rem;
-        gap: 7.6rem;
+        gap: 2rem;
+        overflow-x: hidden;
     }
     .forth-part h3 {
         font-size: 40px;
@@ -55,10 +56,11 @@ import LinkButton from "../components/LinkButton.astro";
         color: #1E1E1E;
     }
     .forth-part .text1 {
-        padding-left: 16.2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .forth-part .text1 p {
-        width: 42.375rem;
+        width: 90vw;
     }
     .forth-part .text1 p:first-of-type {
         margin-bottom: 3.9rem;
@@ -75,14 +77,48 @@ import LinkButton from "../components/LinkButton.astro";
         object-fit: contain;
     }
     .forth-part .text2 {
-        padding-right: 16.2rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
     .forth-part .text2 h3 {
         margin-top: 4.5rem;
         margin-bottom: 2.875rem;
     }
     .forth-part .text2 p {
-        width: 34.688rem;
+        width: 90vw;
         margin-bottom: 2.875rem;
+    }
+    @media only screen and (min-width: 600px) {
+        .forth-part {
+            background-color: #F1F1F1;
+            padding-top: 8.375rem;
+            padding-bottom: 9.75rem;
+            gap: 7.6rem;
+            overflow-x: hidden;
+        }
+        .forth-part .text1 {
+            padding-left: 6.2rem;
+            padding-right: 0;
+        }
+        .forth-part .text1 p {
+            width: 42.375rem;
+        }
+        .forth-part .text2 {
+            padding-right: 6.2rem;
+            padding-left: 0;
+        }
+        .forth-part .text2 p {
+            width: 34.688rem;
+            margin-bottom: 2.875rem;
+        }
+    }
+    @media screen
+    and (-webkit-max-device-pixel-ratio: 1) {
+        .forth-part .text1 {
+            padding-left: 16.2rem;
+        }
+        .forth-part .text2 {
+            padding-right: 16.2rem;
+        }
     }
 </style>
