@@ -3,7 +3,7 @@
 ---
 <div class="third-part position-relative">
     <img src="/images/Gruppe 56.png" alt="" class="gruppe">
-    <div class="d-flex content">
+    <div class="d-flex flex-column flex-md-row content">
         <div class="d-flex flex-column fst-row">
             <h3>KOSTEN STANDFLÄCHE</h3>
             <div class="kosten-card card shadow">
@@ -96,9 +96,9 @@
         margin-bottom: 2.125rem;
     }
     .content {
-        padding-left: 15.8rem;
-        padding-right: 17.125rem;
-        gap: 10.7rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 2.7rem;
         z-index: 2;
         position: relative;
     }
@@ -107,7 +107,7 @@
         padding-top: 2.125rem;
         padding-bottom: 2.125rem;
         padding-left: 2.125rem;
-        width: 27.125rem;
+        width: 90vw;
         font-size: 20px;
         line-height: 30px;
         font-weight: bold;
@@ -122,7 +122,7 @@
         line-height: 30px;
         font-weight: normal;
         color: #F8FBFD;
-        width: 30.125rem;
+        width: 90vw;
     }
     .arrow {
         margin-right: 1.125rem;
@@ -139,14 +139,40 @@
     .gruppe {
         display: none;
         position: absolute;
-        bottom: -385px;
-        right: -960px;
+        bottom: -720px;
+        right: -900px;
         transform: rotate(109deg) scale(0.5);
         z-index: 1;
     }
     @media only screen and (min-width: 600px) {
         .gruppe {
             display: block;
+        }
+        .content {
+            padding-left: 5.8rem;
+            padding-right: 7.125rem;
+            gap: 10.7rem;
+            z-index: 2;
+            position: relative;
+        }
+        .kosten-card {
+            background-color: #FFFFFF;
+            padding-top: 2.125rem;
+            padding-bottom: 2.125rem;
+            padding-left: 2.125rem;
+            width: 27.125rem;
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: bold;
+            color: #1E1E1E;
+            margin-bottom: 1.125rem;
+        }
+        .fst-row p {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: normal;
+            color: #F8FBFD;
+            width: 30.125rem;
         }
     }
     @media screen
@@ -158,6 +184,13 @@
             right: -900px;
             transform: rotate(109deg) scale(0.5);
             z-index: 1;
+        }
+        .content {
+            padding-left: 15.8rem;
+            padding-right: 17.125rem;
+            gap: 10.7rem;
+            z-index: 2;
+            position: relative;
         }
     }
 </style>
