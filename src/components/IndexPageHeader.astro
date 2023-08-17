@@ -1,0 +1,104 @@
+---
+
+---
+
+<header class="position-relative">
+    <img src="/images/Background_bad_Vilbel.png" alt="" srcset="/images/Background_bad_Vilbel@2x.png 2x" class="background">
+    <div class="text d-flex flex-column position-relative">
+        <div class="place align-self-end">BAD VILBEL<span class="line"></span>VILCO</div>
+        <div class="date">3. - 4. MAI <span class="year">2024</span></div>
+    </div>
+        <div class="moto">"Hands on Belly and Screen"</div>
+    <img src="/images/Gruppe 57.png" alt="" srcset="/images/Gruppe 57@2x.png 2x" class="cells overflow-hidden">
+    <img src="/images/Gruppe 31.png" alt="" srcset="/images/Gruppe 31@2x.png 2x" class="gruppe overflow-hidden">
+    <img src="/icons/Gruppe 95.svg" class="arrow overflow-hidden" alt="">
+</header>
+
+<style>
+    @font-face {
+        font-family: 'Reenie Beanie';
+        src: url('/css/ReenieBeanie-Regular.ttf') format('truetype');
+    }
+    header {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+    .line {
+        width: 0px;
+        height: 2.2rem;
+        border: 2px solid #F8FBFD;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .text {
+        padding-top: 34.25rem;
+        padding-left: 12rem;
+        width: fit-content;
+    }
+    .place {
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 47px;
+        letter-spacing: -1.96px;
+        color: #F8FBFD;
+    }
+    .date {
+        font-size: 171px;
+        font-weight: bold;
+        line-height: 143px;
+        letter-spacing: -11.46px;
+        color: #F8FBFD;
+    }
+    .year {
+        position: absolute;
+        transform: rotate(-90deg) translateX(20%) translateY(-30%);
+        font-size: 58px;
+        letter-spacing: -2.15px;
+        font-weight: 600;
+        line-height: 76px;
+        bottom: 0;
+    }
+    .moto {
+        font-family: 'Reenie Beanie';
+        font-size: 68px;
+        font-weight: normal;
+        line-height: 77px;
+        letter-spacing: -6.19px;
+        margin-top: 1.9rem;
+        margin-left: 19.8rem;
+    }
+    .cells {
+        position: absolute;
+        top: 15px;
+        right: -210px;
+        z-index: -2;
+        transform: scale(0.92);
+    }
+    .gruppe {
+        position: absolute;
+        top: 60px;
+        right: 355px;
+        z-index: -1;
+        transform: scale(0.92);
+    }
+    .arrow {
+        position: absolute;
+        bottom: 33px;
+        left: 50%;
+        z-index: -1;
+        transform: translateX(-50%) scale(0.5);
+    }
+    .background {
+        position: absolute;
+        top: 0;
+        height: auto;
+        width: 100vw;
+        object-fit: contain;
+        z-index: -3;
+        filter: blur(11px) brightness(1.15);
+        -webkit-filter: blur(11px) brightness(1.15);
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+    }
+</style>
