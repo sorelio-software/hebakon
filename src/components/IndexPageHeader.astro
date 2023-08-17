@@ -32,8 +32,8 @@
         margin-right: 0.5rem;
     }
     .text {
-        padding-top: 34.25rem;
-        padding-left: 12rem;
+        padding-top: 24.25rem;
+        padding-left: 5rem;
         width: fit-content;
     }
     .place {
@@ -70,21 +70,21 @@
     }
     .cells {
         position: absolute;
-        top: 15px;
-        right: -210px;
+        top: 10px;
+        right: -380px;
         z-index: -2;
-        transform: scale(0.92);
+        transform: scale(0.90);
     }
     .gruppe {
         position: absolute;
         top: 60px;
-        right: 355px;
+        right: 180px;
         z-index: -1;
-        transform: scale(0.92);
+        transform: scale(0.90);
     }
     .arrow {
         position: absolute;
-        bottom: 33px;
+        bottom: 0;
         left: 50%;
         z-index: -1;
         transform: translateX(-50%) scale(0.5);
@@ -100,5 +100,34 @@
         -webkit-filter: blur(11px) brightness(1.15);
         transform: scale(1.1);
         -webkit-transform: scale(1.1);
+    }
+    @media screen
+    and (-webkit-max-device-pixel-ratio: 1) {
+        .gruppe {
+            position: absolute;
+            top: 60px;
+            right: 355px;
+            z-index: -1;
+            transform: scale(0.92);
+        }
+        .cells {
+            position: absolute;
+            top: 15px;
+            right: -210px;
+            z-index: -2;
+            transform: scale(0.92);
+        }
+        .text {
+            padding-top: 34.25rem;
+            padding-left: 12rem;
+            width: fit-content;
+        }
+        .arrow {
+            position: absolute;
+            bottom: 33px;
+            left: 50%;
+            z-index: -1;
+            transform: translateX(-50%) scale(0.5);
+        }
     }
 </style>
