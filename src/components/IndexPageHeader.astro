@@ -26,80 +26,160 @@
     }
     .line {
         width: 0px;
-        height: 2.2rem;
-        border: 2px solid #F8FBFD;
+        height: 100%;
+        border: 1px solid #F8FBFD;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
     }
     .text {
-        padding-top: 24.25rem;
-        padding-left: 5rem;
+        padding-top: 28rem;
+        padding-left: 2.4rem;
         width: fit-content;
     }
     .place {
-        font-size: 35px;
-        font-weight: 600;
-        line-height: 47px;
-        letter-spacing: -1.96px;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 20px;
+        letter-spacing: unset;
         color: #F8FBFD;
     }
     .date {
-        font-size: 171px;
-        font-weight: bold;
-        line-height: 143px;
-        letter-spacing: -11.46px;
+        font-size: 53px;
+        font-weight: 800;
+        line-height: 52px;
+        letter-spacing: 0.53px;
         color: #F8FBFD;
     }
     .year {
         position: absolute;
-        transform: rotate(-90deg) translateX(20%) translateY(-30%);
-        font-size: 58px;
-        letter-spacing: -2.15px;
-        font-weight: 600;
-        line-height: 76px;
+        transform: rotate(-90deg) translateX(40%) translateY(-50%);
+        font-size: 20px;
+        letter-spacing: 0.2px;
+        font-weight: 800;
+        line-height: 20px;
         bottom: 0;
     }
     .moto {
         font-family: 'Reenie Beanie';
-        font-size: 68px;
+        font-size: 26px;
         font-weight: normal;
-        line-height: 77px;
-        letter-spacing: -6.19px;
-        margin-top: 1.9rem;
-        margin-left: 19.8rem;
+        line-height: 30px;
+        letter-spacing: -2.37px;
+        margin-top: 2.875rem;
+        margin-left: 0;
+        text-align: center;
     }
     .cells {
         position: absolute;
-        top: 10px;
-        right: -380px;
+        top: -130px;
+        right: -770px;
         z-index: -2;
-        transform: scale(0.90);
+        transform: scale(0.65);
     }
     .gruppe {
         position: absolute;
-        top: 60px;
-        right: 180px;
+        top: -63px;
+        right: -260px;
         z-index: -1;
-        transform: scale(0.90);
+        transform: scale(0.65);
     }
     .arrow {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        z-index: -1;
-        transform: translateX(-50%) scale(0.5);
+        display: none;
     }
     .background {
         position: absolute;
         top: 0;
-        height: auto;
-        width: 100vw;
+        left: -55%;
+        height: 100vh;
+        width: auto;
         object-fit: contain;
         z-index: -3;
         filter: blur(11px) brightness(1.15);
         -webkit-filter: blur(11px) brightness(1.15);
-        transform: scale(1.1);
-        -webkit-transform: scale(1.1);
+        transform: scale(1);
+        -webkit-transform: scale(1.05);
+    }
+    @media only screen and (min-width: 600px) {
+        .line {
+            width: 0px;
+            height: 2.2rem;
+            border: 2px solid #F8FBFD;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+        }
+        .text {
+            padding-top: 24.25rem;
+            padding-left: 5rem;
+            width: fit-content;
+        }
+        .place {
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 47px;
+            letter-spacing: -1.96px;
+            color: #F8FBFD;
+        }
+        .date {
+            font-size: 171px;
+            font-weight: bold;
+            line-height: 143px;
+            letter-spacing: -11.46px;
+            color: #F8FBFD;
+        }
+        .year {
+            position: absolute;
+            transform: rotate(-90deg) translateX(20%) translateY(-30%);
+            font-size: 58px;
+            letter-spacing: -2.15px;
+            font-weight: 600;
+            line-height: 76px;
+            bottom: 0;
+        }
+        .moto {
+            font-family: 'Reenie Beanie';
+            font-size: 68px;
+            font-weight: normal;
+            line-height: 77px;
+            letter-spacing: -6.19px;
+            margin-top: 1.9rem;
+            margin-left: 19.8rem;
+            text-align: left;
+        }
+        .gruppe {
+            position: absolute;
+            top: 60px;
+            right: 180px;
+            z-index: -1;
+            transform: scale(0.90);
+        }
+        .cells {
+            position: absolute;
+            top: 10px;
+            right: -380px;
+            z-index: -2;
+            transform: scale(0.90);
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: unset;
+            height: auto;
+            width: 100vw;
+            object-fit: contain;
+            z-index: -3;
+            filter: blur(11px) brightness(1.15);
+            -webkit-filter: blur(11px) brightness(1.15);
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+        }
+        .arrow {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            z-index: -1;
+            transform: translateX(-50%) scale(0.5);
+        }
     }
     @media screen
     and (-webkit-max-device-pixel-ratio: 1) {
