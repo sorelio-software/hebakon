@@ -1,5 +1,5 @@
 ---
-
+import LinkButton from "./LinkButton.astro";
 ---
 
 <div class="main">
@@ -30,6 +30,7 @@
             <p>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
             </p>
+            <LinkButton>Weitere Infos</LinkButton>
         </div>
     </div>
 </div>
@@ -38,7 +39,7 @@
     .main {
         background-color: #F1F1F1;
         padding-top: 0;
-        padding-bottom: 0;
+        padding-bottom: 2.25rem;
     }
     .fst-row {
         margin-bottom: 2.313rem;
@@ -122,6 +123,7 @@
         letter-spacing: -0.03px;
         font-weight: normal;
         padding-right: 0;
+        margin-bottom: 3rem;
     }
     @media only screen and (min-width: 600px) {
         .main {
@@ -211,6 +213,7 @@
             letter-spacing: -0.04px;
             font-weight: normal;
             padding-right: 12rem;
+            margin-bottom: 3rem;
         }
     }
     @media screen
