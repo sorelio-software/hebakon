@@ -3,7 +3,7 @@
 ---
 
 <div class="main">
-    <div class="card-row d-flex justify-content-center">
+    <div class="card-row d-flex justify-content-center align-items-center flex-column flex-md-row">
         <div class="card shadow flex-column justify-content-center align-items-center">
             <div class="card-icon">
                 <svg width="800px" height="800px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -133,13 +133,18 @@
     .main {
         position: relative;
         z-index: 10;
+        background-color: #F1F1F1;
+        padding-left: 2.25rem;
+        padding-right: 2.25rem;
+        padding-top: 2.25rem;
+        padding-bottom: 3rem;
     }
     .card-row {
         gap: 3.313rem;
-        margin-top: -10rem;
+        margin-top: 0;
     }
     .card {
-        width: 15.625rem;
+        width: 100%;
         height: 15.625rem;
         background-color: #F8FBFD;
         gap: 1.813rem;
@@ -167,5 +172,23 @@
     }
     .card:hover .card-icon svg path {
         fill: #F8FBFD;
+    }
+    @media only screen and (min-width: 600px) {
+        .main {
+            position: relative;
+            z-index: 10;
+            background-color: transparent;
+            padding: 0;
+        }
+        .card-row {
+            gap: 3.313rem;
+            margin-top: -10rem;
+        }
+        .card {
+            width: 15.625rem;
+            height: 15.625rem;
+            background-color: #F8FBFD;
+            gap: 1.813rem;
+        }
     }
 </style>
