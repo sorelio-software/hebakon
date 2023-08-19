@@ -1,0 +1,68 @@
+---
+import LinkButton from "./LinkButton.astro";
+---
+
+<div class="main position-relative d-flex">
+    <img src="/images/Gruppe 56.png" alt="" class="gruppe position-absolute">
+    <div class="img position-relative z-2">
+        <img src="/images/NoPath - Kopie (40).png" alt="">
+    </div>
+    <div class="d-flex flex-column justify-content-center position-relative z-2">
+        <h2>TOP SPEKAER</h2>
+        <h3>MAX MUSTERMANN</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <span><LinkButton>Anmelden</LinkButton></span>
+    </div>
+</div>
+
+<style>
+    .main {
+        background-color: #2F5862;
+        padding-top: 10.375rem;
+        overflow: hidden;
+    }
+    .gruppe {
+        top: -955px;
+        left: 460px;
+        transform: scale(0.5) rotate(110deg);
+        z-index: 1;
+    }
+    .img {
+        margin-left: -1rem;
+    }
+    .img img {
+        width: 54.25rem;
+        height: auto;
+    }
+    h2 {
+        font-size: 90px;
+        font-weight: bold;
+        line-height: 82px;
+        letter-spacing: -0.18px;
+        color: #D88788;
+        margin-left: -5.5rem;
+    }
+    h3 {
+        font-size: 50px;
+        font-weight: bold;
+        line-height: 68px;
+        letter-spacing: -2.05px;
+        color: #F8FBFD;
+        padding-left: 3rem;
+        margin-bottom: 5.672rem;
+    }
+    p {
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: -0.04px;
+        color: #F8FBFD;
+        padding-left: 4.5rem;
+        padding-right: 25rem;
+        margin-bottom: 1.5rem;
+    }
+    span {
+        padding-left: 4.5rem;
+    }
+</style>
