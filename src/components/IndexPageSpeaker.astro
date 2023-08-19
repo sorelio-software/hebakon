@@ -25,7 +25,7 @@ import LinkButton from "./LinkButton.astro";
     }
     .gruppe {
         top: -955px;
-        left: 460px;
+        left: 100px;
         transform: scale(0.5) rotate(110deg);
         z-index: 1;
     }
@@ -33,7 +33,7 @@ import LinkButton from "./LinkButton.astro";
         margin-left: -1rem;
     }
     .img img {
-        width: 54.25rem;
+        width: 40.25rem;
         height: auto;
     }
     h2 {
@@ -59,10 +59,32 @@ import LinkButton from "./LinkButton.astro";
         letter-spacing: -0.04px;
         color: #F8FBFD;
         padding-left: 4.5rem;
-        padding-right: 25rem;
+        padding-right: 10rem;
         margin-bottom: 1.5rem;
     }
     span {
         padding-left: 4.5rem;
+    }
+    @media screen
+    and (-webkit-max-device-pixel-ratio: 1) {
+        .gruppe {
+            top: -955px;
+            left: 460px;
+            transform: scale(0.5) rotate(110deg);
+            z-index: 1;
+        }
+        .img img {
+            width: 54.25rem;
+            height: auto;
+        }
+        p {
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: -0.04px;
+            color: #F8FBFD;
+            padding-left: 4.5rem;
+            padding-right: 25rem;
+            margin-bottom: 1.5rem;
+        }
     }
 </style>
