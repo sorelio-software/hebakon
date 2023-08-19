@@ -25,6 +25,7 @@ import LinkButton from "./LinkButton.astro";
         overflow: hidden;
     }
     .gruppe {
+        display: none;
         top: -955px;
         left: 100px;
         transform: scale(0.5) rotate(110deg);
@@ -75,6 +76,13 @@ import LinkButton from "./LinkButton.astro";
         padding-left: 0;
     }
     @media only screen and (min-width: 600px) {
+        .gruppe {
+            display: block;
+            top: -955px;
+            left: 100px;
+            transform: scale(0.5) rotate(110deg);
+            z-index: 1;
+        }
         .content {
             padding-left: 0;
             padding-right: 0;
