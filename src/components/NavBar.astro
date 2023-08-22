@@ -61,8 +61,15 @@ import LinkButton from "./LinkButton.astro";
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
     }
+    @media only screen and (min-width: 992px) {
+      .navbar {
+        background-color: transparent;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+      }
+    }
     @media screen
-    and (-webkit-max-device-pixel-ratio: 1) {
+    and (min-width: 1200px) {
       img {
         height: 4.25rem;
         width: auto;
@@ -70,13 +77,6 @@ import LinkButton from "./LinkButton.astro";
       .navbar {
         padding-left: 11.25rem;
         padding-right: 11.25rem;
-      }
-    }
-    @media only screen and (min-width: 992px) {
-      .navbar {
-        background-color: transparent;
-        backdrop-filter: none;
-        -webkit-backdrop-filter: none;
       }
     }
     .nav-link:hover {
