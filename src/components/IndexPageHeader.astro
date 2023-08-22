@@ -66,8 +66,8 @@
         line-height: 30px;
         letter-spacing: -2.37px;
         margin-top: 2.875rem;
-        margin-left: 0;
-        text-align: center;
+        margin-left: 5.5rem;
+        text-align: left;
     }
     .cells {
         position: absolute;
@@ -99,7 +99,7 @@
         transform: scale(1);
         -webkit-transform: scale(1.05);
     }
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 992px) {
         .line {
             width: 0px;
             height: 2.2rem;
@@ -163,8 +163,8 @@
             position: absolute;
             top: 0;
             left: unset;
-            height: auto;
-            width: 100vw;
+            height: 100vh;
+            width: auto;
             object-fit: contain;
             z-index: -3;
             filter: blur(11px) brightness(1.15);
@@ -179,6 +179,12 @@
             left: 50%;
             z-index: -1;
             transform: translateX(-50%) scale(0.5);
+        }
+    }
+    @media only screen and (min-width: 1700px) {
+        .background {
+            height: auto;
+            width: 100vw;
         }
     }
     @media screen
