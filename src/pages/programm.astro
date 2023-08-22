@@ -11,7 +11,7 @@ import Layout from "../layouts/Layout.astro";
                     <div class="date">03</div>
                     <div class="day">Freitag</div>
                 </div>
-                <div class="program program-first rounded shadow container-fluid">
+                <div class="program program-first rounded shadow container-fluid d-flex flex-column">
                     <div class="row align-items-top">
                         <div class="time col-3">AB 08:30 UHR</div>
                         <div class="col second-text border-start border-black border-3">Registrierung und Besuch Aussteller-Forum</div>
@@ -56,7 +56,7 @@ import Layout from "../layouts/Layout.astro";
                     <div class="date">04</div>
                     <div class="day">Samstag</div>
                 </div>
-                <div class="program program-second rounded shadow container-fluid">
+                <div class="program program-second rounded shadow container-fluid d-flex flex-column">
                     <div class="row align-items-top">
                         <div class="time col-3">AB 08:30 UHR</div>
                         <div class="col second-text border-start border-black border-3">Registrierung und Besuch Aussteller-Forum</div>
@@ -127,7 +127,7 @@ import Layout from "../layouts/Layout.astro";
         background-color: #F8FBFD;
     }
     .row:has(.filler) {
-        height: 58%;
+        flex: 1 1 auto;
     }
     .filler::before {
         content: "";
@@ -189,7 +189,7 @@ import Layout from "../layouts/Layout.astro";
         padding-right: 0.5rem;
     }
 
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 992px) {
         main {
             background-color: #F1F1F1;
             padding-top: 8rem;
@@ -236,7 +236,7 @@ import Layout from "../layouts/Layout.astro";
     }
 
     @media screen
-    and (-webkit-max-device-pixel-ratio: 1) {
+    and (min-width: 1200px) {
         main {
             padding-top: 8rem;
             padding-bottom: 6.4rem;
