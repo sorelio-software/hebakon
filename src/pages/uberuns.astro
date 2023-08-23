@@ -6,7 +6,7 @@ import LinkButton from "../components/LinkButton.astro";
 
 <Layout title="Über Uns - Das Team">
     <main>
-        <div class="d-flex flex-column flex-md-row directors justify-content-center">
+        <div class="d-flex flex-column flex-xl-row directors justify-content-center">
             <div class="d-flex gap-4">
                 <div class="img-up">
                     <img src="/images/NoPath - Kopie (4) - dir.png" alt="">
@@ -22,8 +22,8 @@ import LinkButton from "../components/LinkButton.astro";
         </div>
         <div class="container-fluid team">
             <div class="row">
-                <div class="col-4">
-                    <div class="card team-card mx-auto mx-md-0">
+                <div class="col col-xl-4">
+                    <div class="card team-card mx-auto mx-xl-0">
                         <div class="card-body">
                             <h4 class="card-title">Team</h4>
                             <p class="card-text">
@@ -33,7 +33,7 @@ import LinkButton from "../components/LinkButton.astro";
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8 col-12">
+                <div class="col-xl-8 col-12">
                     <div class="container">
                         <div class="row card-row">
                             <div class="col">
@@ -123,7 +123,6 @@ import LinkButton from "../components/LinkButton.astro";
     .team-card {
         background-color: #335D66;
         color: #F8FBFD;
-        width: 22.3rem;
         padding-left: 2.8rem;
         padding-right: 2.8rem;
         padding-top: 5.5rem;
@@ -137,13 +136,19 @@ import LinkButton from "../components/LinkButton.astro";
         gap: 4.75rem;
         margin-bottom: 4.6rem;
         flex-wrap: wrap;
+        flex-direction: column;
     }
     .imgs img {
         height: 100%;
         width: 100%;
         object-fit: contain;
     }
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 992px) {
+        .card-row {
+            flex-direction: row;
+        }
+    }
+    @media only screen and (min-width: 1200px) {
         .directors {
             padding-left: 20.4rem;
             padding-right: 21rem;
@@ -180,11 +185,12 @@ import LinkButton from "../components/LinkButton.astro";
             flex-wrap: nowrap;
         }
         .team-card {
+            width: 22.3rem;
             margin-bottom: 0;
         }
     }
     @media screen
-    and (-webkit-max-device-pixel-ratio: 1) {
+    and (min-width: 1400px) {
         .team {
             padding: 0;
             padding-left: 15.6rem;
