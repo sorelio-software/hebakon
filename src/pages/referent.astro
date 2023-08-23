@@ -7,8 +7,8 @@ import Layout from "../layouts/Layout.astro";
     <main>
         <div class="container-fluid">
             <div class="row">
-                <div class=" col-md-4 d-flex flex-column info-col">
-                    <div class="card speaker-card mx-auto mx-md-0">
+                <div class=" col-xl-4 d-flex flex-column info-col">
+                    <div class="card speaker-card mx-auto mx-xl-0">
                         <div class="card-body">
                             <h4 class="card-title">SPEAKER</h4>
                             <p class="card-text">
@@ -16,7 +16,7 @@ import Layout from "../layouts/Layout.astro";
                             </p>
                         </div>
                     </div>
-                    <form class="search rounded shadow container-fluid align-items-center mx-auto mx-md-0">
+                    <form class="search rounded shadow container-fluid align-items-center mx-auto mx-xl-0">
                         <input type="text" placeholder="Suche Namen" class="rounded col-10">
                         <button>
                             <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,11 +26,11 @@ import Layout from "../layouts/Layout.astro";
                             </svg>
                         </button>
                     </form>
-                    <div class="categories rounded shadow d-flex align-items-center mb-5 mb-md-0 mx-auto mx-md-0">
+                    <div class="categories rounded shadow d-flex align-items-center mb-5 mb-xl-0 mx-auto mx-xl-0">
                         <p>Kategorien</p>
                     </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-xl-7">
                     <div class="container">
                         <div class="row card-row">
                             <div class="col">
@@ -76,7 +76,7 @@ import Layout from "../layouts/Layout.astro";
 
 <style>
     .categories {
-        width: 23rem;
+        width: 100%;
         height: 3.4rem;
         background-color: #FFFFFF;
     }
@@ -91,7 +91,6 @@ import Layout from "../layouts/Layout.astro";
         gap: 1.6rem;
     }
     .search {
-        width: 23rem;
         height: 3.4rem;
         background-color: #FFFFFF;
         margin: 0;
@@ -125,7 +124,6 @@ import Layout from "../layouts/Layout.astro";
         background-color: #D88788;
         color: #F8FBFD;
         border: none;
-        width: 23rem;
     }
     .speaker-card .card-body {
         padding-top: 5.5rem;
@@ -150,6 +148,7 @@ import Layout from "../layouts/Layout.astro";
     .card-row {
         gap: 4.75rem;
         margin-bottom: 2.6rem;
+        flex-direction: column;
     }
     .card-row:last-of-type {
         margin-bottom: 0;
@@ -162,7 +161,13 @@ import Layout from "../layouts/Layout.astro";
         padding-bottom: 9.2rem;
     }
 
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 992px) {
+        .card-row {
+            flex-direction: row;
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
         main {
             padding-left: 5.6rem;
             padding-right: 6.7rem;
@@ -174,10 +179,29 @@ import Layout from "../layouts/Layout.astro";
             margin-bottom: 4.6rem;
             flex-wrap: nowrap;
         }
+        .speaker-card {
+            background-color: #D88788;
+            color: #F8FBFD;
+            border: none;
+            width: 23rem;
+        }
+        .search {
+            width: 23rem;
+            height: 3.4rem;
+            background-color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+            padding-left: 1.9rem;
+        }
+        .categories {
+            width: 23rem;
+            height: 3.4rem;
+            background-color: #FFFFFF;
+        }
     }
 
     @media screen
-    and (-webkit-max-device-pixel-ratio: 1) {
+    and (min-width: 1400px;) {
         main {
             padding-top: 8rem;
             padding-left: 15.6rem;
