@@ -7,12 +7,12 @@ import LinkButton from "../components/LinkButton.astro";
 
 <Layout title="Infos & Tickets">
     <main>
-        <div class="d-flex fst-part flex-column flex-md-row">
-            <div class="d-flex flex-column order-1 order-md-0">
-                <div class="img-1 order-1 order-md-0">
+        <div class="d-flex fst-part flex-column flex-xxl-row">
+            <div class="d-flex flex-column order-1 order-xxl-0">
+                <div class="img-1 order-1 order-xxl-0">
                     <img src="/images/NoPath - Kopie (61).png" alt="">
                 </div>
-                <div class="content-1 order-0 order-md-1">
+                <div class="content-1 order-0 order-xxl-1">
                     <h3>ÜBERNACHTUNG</h3>
                     <p>
                         Es befinden sich 180 Zimmer im neu erbauten und direkt angeschlossenen Dorint-Parkhotel. Alternative Hotelverfügbarkeit im Umkreis vorhanden. Bad Vilbel verfügt auch über zahlreiche Privatunterkünfte: <span class="underline">www.bad-vilbel.de/produkte/unterkunftsverzeichnis</span><br/>
@@ -40,7 +40,7 @@ import LinkButton from "../components/LinkButton.astro";
                     </p>
                 </div>
             </div>
-            <div class="d-flex flex-column order-0 order-md-1">
+            <div class="d-flex flex-column order-0 order-xxl-1">
                 <div class="content-2">
                     <h2>BAD VILBEL</h2>
                     <p>
@@ -152,7 +152,7 @@ import LinkButton from "../components/LinkButton.astro";
         width: 100%;
         object-fit: contain;
     }
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 1400px) {
         .fst-part {
             background-color: #F1F1F1;
             padding-top: 9.75rem;
@@ -185,7 +185,7 @@ import LinkButton from "../components/LinkButton.astro";
     }
 
     @media screen
-    and (-webkit-max-device-pixel-ratio: 1) {
+    and (min-width: 1700px) {
         .fst-part {
             background-color: #F1F1F1;
             padding-top: 9.75rem;
