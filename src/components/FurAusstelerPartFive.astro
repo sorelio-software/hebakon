@@ -6,8 +6,8 @@ import FurAusstelerListItem from "../components/FurAusstelerListItem.astro";
     <img src="/images/Gruppe 56.png" alt="" class="gruppe">
     <div class="d-flex flex-column align-items-center content">
         <h2>ÜBERSICHT SPONSORINGMÖGLICHKEITEN UND WERBUNG</h2>
-        <div class="d-flex flex-column flex-md-row lst-of-lst">
-            <div class="d-flex flex-column lst order-1 order-md-0">
+        <div class="d-flex flex-column flex-lg-row lst-of-lst">
+            <div class="d-flex flex-column lst order-1 order-lg-0">
                 <FurAusstelerListItem>Lanyards</FurAusstelerListItem>
                 <FurAusstelerListItem>Paket Stifte und Schreibblöcke</FurAusstelerListItem>
                 <FurAusstelerListItem>Hebammen Party max. 2 Sponsoren</FurAusstelerListItem>
@@ -16,7 +16,7 @@ import FurAusstelerListItem from "../components/FurAusstelerListItem.astro";
                 <FurAusstelerListItem>Bannerschaltungen auf der Kongresshomepage</FurAusstelerListItem>
                 <div class="question">Oder haben Sie weitere Ideen?</div>
             </div>
-            <div class="d-flex flex-column lst order-0 order-md-0">
+            <div class="d-flex flex-column lst order-0 order-lg-0">
                 <FurAusstelerListItem>Wasserspender Sponsoring auf Anfrage</FurAusstelerListItem>
                 <FurAusstelerListItem>Lunch: 2 x Lunch, 2 Erfrischungspausen pro Ausgabestation nur 1 Sponsor</FurAusstelerListItem>
                 <FurAusstelerListItem>Bannerschaltungen im Kongressgebäude</FurAusstelerListItem>
@@ -71,7 +71,7 @@ import FurAusstelerListItem from "../components/FurAusstelerListItem.astro";
         transform: rotate(109deg) scale(0.5);
         z-index: 1;
     }
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 992px) {
         .fifth-part h2 {
             font-size: 40px;
             line-height: 60px;
@@ -93,7 +93,7 @@ import FurAusstelerListItem from "../components/FurAusstelerListItem.astro";
         }
     }
     @media screen
-    and (-webkit-max-device-pixel-ratio: 1) {
+    and (min-width: 1200px) {
         .fifth-part h2 {
             font-size: 40px;
             line-height: 60px;
